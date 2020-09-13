@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ionic App</title>
+
+  <base href="/" />
+
+  <meta name="color-scheme" content="light dark" />
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="msapplication-tap-highlight" content="no" />
+  <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
+  <!-- add to homescreen for ios -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+</head>
+
+<body>
+ 
+
+ 
+  <ion-app>
+    <ion-header>
+      <ion-toolbar color ="secondary">
+        <ion-title >
+          Budget Planner
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+          <ion-card-title>Card Title</ion-card-title>
+        </ion-card-header>
+      
+        <ion-card-content>
+          Keep close to Nature's heart... and break clear away, once in awhile,
+          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          <br>
+          <br>
+          <ion-card-title>Budget Information</ion-card-title>
+          <ion-item>
+            <ion-label position="floating">Expense Reason</ion-label>
+            <ion-input type="text" id="input-reason"></ion-input>
+          </ion-item>
+    
+          <ion-item>
+            <ion-label position="floating">Expense number</ion-label>
+            <ion-input type ="number" id="input-amount"></ion-input>
+          </ion-item>
+        
+
+          <div margin-vertical text-right>
+          <ion-button id ="btn-clear" fill="solid" color="danger"><ion-icon name="close-outline"></ion-icon>Clear</ion-button>
+          <ion-button id="btn-add">Add Expenses</ion-button>
+        </div>
+        </ion-card-content>
+      </ion-card>
+
+  
+    </ion-content>
+  </ion-app>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
